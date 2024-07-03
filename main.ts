@@ -1,6 +1,6 @@
 let Distancia = 0
 music.play(music.stringPlayable("E B C5 A B G A F ", 71), music.PlaybackMode.InBackground)
-basic.showString("Hello!")
+basic.showString("HOLA ")
 basic.showIcon(IconNames.Ghost)
 mbit_Robot.RGB_Car_Big2(mbit_Robot.enColor.OFF)
 basic.forever(function () {
@@ -28,4 +28,5 @@ basic.forever(function () {
     } else if (mbit_Robot.Line_Sensor(mbit_Robot.enPos.LeftState, mbit_Robot.enLineState.Black) && mbit_Robot.Line_Sensor(mbit_Robot.enPos.RightState, mbit_Robot.enLineState.Black)) {
         mbit_Robot.CarCtrl(mbit_Robot.CarState.Car_Stop)
     }
+    mbit_Robot.Music_Car(mbit_Robot.enMusic.ringtone)
 })
